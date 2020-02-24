@@ -12502,3 +12502,230 @@ Processing by UsersController#validate as */*
 Completed 200 OK in 46ms (Views: 0.3ms | ActiveRecord: 27.6ms | Allocations: 7361)
 
 
+Started GET "/validate" for ::1 at 2020-02-24 09:44:34 +0000
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#validate as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `get_current_user'
+Completed 200 OK in 31ms (Views: 0.3ms | ActiveRecord: 12.0ms | Allocations: 7270)
+
+
+Started GET "/validate" for ::1 at 2020-02-24 09:50:45 +0000
+Processing by UsersController#validate as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `get_current_user'
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.9ms | Allocations: 933)
+
+
+Started GET "/validate" for ::1 at 2020-02-24 09:52:02 +0000
+Processing by UsersController#validate as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `get_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 856)
+
+
+Started GET "/validate" for ::1 at 2020-02-24 09:52:24 +0000
+Processing by UsersController#validate as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `get_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 856)
+
+
+Started GET "/validate" for ::1 at 2020-02-24 09:52:39 +0000
+Processing by UsersController#validate as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `get_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 856)
+
+
+Started GET "/validate" for ::1 at 2020-02-24 09:55:32 +0000
+Processing by UsersController#validate as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `get_current_user'
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 839)
+
+
+Started GET "/validate" for ::1 at 2020-02-24 09:55:39 +0000
+Processing by UsersController#validate as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `get_current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 839)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCycle Load (2.7ms)[0m  [1m[34mSELECT "cycles".* FROM "cycles" WHERE "cycles"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+Started GET "/validate" for ::1 at 2020-02-24 10:17:53 +0000
+Processing by UsersController#validate as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `get_current_user'
+Completed 200 OK in 14ms (Views: 1.3ms | ActiveRecord: 1.4ms | Allocations: 922)
+
+
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (75.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Mod_4_Project_Back_End2_development"[0m
+  [1m[35m (41.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Mod_4_Project_Back_End2_test"[0m
+  [1m[35m (169.4ms)[0m  [1m[35mCREATE DATABASE "Mod_4_Project_Back_End2_development" ENCODING = 'unicode'[0m
+  [1m[35m (61.2ms)[0m  [1m[35mCREATE DATABASE "Mod_4_Project_Back_End2_test" ENCODING = 'unicode'[0m
+  [1m[35m (18.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8039269843802488515)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200210095532)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (5.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200210095532"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCycles (20200223105720)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "cycles" ("id" bigserial primary key, "start_date" character varying, "cycle_length" integer, "period_length" integer, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_6b597b295d"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_cycles_on_user_id" ON "cycles"  ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200223105720"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTrackers (20200224102914)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "trackers" ("id" bigserial primary key, "date" character varying, "intensity" integer, "collection" character varying, "cycle_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_97c98ae921"
+FOREIGN KEY ("cycle_id")
+  REFERENCES "cycles" ("id")
+)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_trackers_on_cycle_id" ON "trackers"  ("cycle_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200224102914"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-02-24 10:32:55.072465"], ["updated_at", "2020-02-24 10:32:55.072465"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8039269843802488515)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (28.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Mod_4_Project_Back_End2_development"[0m
+  [1m[35m (25.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Mod_4_Project_Back_End2_test"[0m
+  [1m[35m (144.2ms)[0m  [1m[35mCREATE DATABASE "Mod_4_Project_Back_End2_development" ENCODING = 'unicode'[0m
+  [1m[35m (100.6ms)[0m  [1m[35mCREATE DATABASE "Mod_4_Project_Back_End2_test" ENCODING = 'unicode'[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8039269843802488515)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200210095532)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200210095532"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCycles (20200223105720)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "cycles" ("id" bigserial primary key, "start_date" character varying, "cycle_length" integer, "period_length" integer, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_6b597b295d"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_cycles_on_user_id" ON "cycles"  ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200223105720"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTrackers (20200224102914)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "trackers" ("id" bigserial primary key, "date" character varying, "intensity" integer, "collection" character varying, "cycle_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_97c98ae921"
+FOREIGN KEY ("cycle_id")
+  REFERENCES "cycles" ("id")
+)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_trackers_on_cycle_id" ON "trackers"  ("cycle_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200224102914"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-02-24 10:33:58.688412"], ["updated_at", "2020-02-24 10:33:58.688412"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8039269843802488515)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Lope"], ["last_name", "Ariyo"], ["email", "lope.ariyo@faker.com"], ["password_digest", "$2a$12$1ucRRbU6fiOmLSSX1F/7Cevm1.huoRjDCoMfAV1ecHaqbfReqZW6C"], ["created_at", "2020-02-24 10:33:59.022453"], ["updated_at", "2020-02-24 10:33:59.022453"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Dana"], ["last_name", "Lee"], ["email", "lee.dana@faker.com"], ["password_digest", "$2a$12$9C5kNCMPyeXXQENSVTFxAORd/y5Yx6M2HBTL9AAULmF0t6/oza28."], ["created_at", "2020-02-24 10:33:59.241047"], ["updated_at", "2020-02-24 10:33:59.241047"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Rose"], ["last_name", "Nurse"], ["email", "r.nurse@faker.com"], ["password_digest", "$2a$12$RIDJohKsVsG6tnFGRBHbIOuntI6RdI20fCmDGulL/QZpDBLUJOlve"], ["created_at", "2020-02-24 10:33:59.453265"], ["updated_at", "2020-02-24 10:33:59.453265"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCycle Create (7.4ms)[0m  [1m[32mINSERT INTO "cycles" ("start_date", "cycle_length", "period_length", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start_date", "01/01/2020"], ["cycle_length", 30], ["period_length", 5], ["user_id", 3], ["created_at", "2020-02-24 10:33:59.481588"], ["updated_at", "2020-02-24 10:33:59.481588"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCycle Create (0.5ms)[0m  [1m[32mINSERT INTO "cycles" ("start_date", "cycle_length", "period_length", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start_date", "12/13/2019"], ["cycle_length", 29], ["period_length", 4], ["user_id", 2], ["created_at", "2020-02-24 10:33:59.495358"], ["updated_at", "2020-02-24 10:33:59.495358"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCycle Create (0.6ms)[0m  [1m[32mINSERT INTO "cycles" ("start_date", "cycle_length", "period_length", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start_date", "01/11/2020"], ["cycle_length", 30], ["period_length", 4], ["user_id", 2], ["created_at", "2020-02-24 10:33:59.499794"], ["updated_at", "2020-02-24 10:33:59.499794"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCycle Create (0.4ms)[0m  [1m[32mINSERT INTO "cycles" ("start_date", "cycle_length", "period_length", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start_date", "02/10/2020"], ["cycle_length", 31], ["period_length", 5], ["user_id", 2], ["created_at", "2020-02-24 10:33:59.506796"], ["updated_at", "2020-02-24 10:33:59.506796"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCycle Create (0.4ms)[0m  [1m[32mINSERT INTO "cycles" ("start_date", "cycle_length", "period_length", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start_date", "09/14/2019"], ["cycle_length", 29], ["period_length", 5], ["user_id", 1], ["created_at", "2020-02-24 10:33:59.511226"], ["updated_at", "2020-02-24 10:33:59.511226"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCycle Create (0.4ms)[0m  [1m[32mINSERT INTO "cycles" ("start_date", "cycle_length", "period_length", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start_date", "10/13/2019"], ["cycle_length", 28], ["period_length", 4], ["user_id", 1], ["created_at", "2020-02-24 10:33:59.515488"], ["updated_at", "2020-02-24 10:33:59.515488"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCycle Create (0.4ms)[0m  [1m[32mINSERT INTO "cycles" ("start_date", "cycle_length", "period_length", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start_date", "11/10/2019"], ["cycle_length", 27], ["period_length", 4], ["user_id", 1], ["created_at", "2020-02-24 10:33:59.521782"], ["updated_at", "2020-02-24 10:33:59.521782"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCycle Create (0.4ms)[0m  [1m[32mINSERT INTO "cycles" ("start_date", "cycle_length", "period_length", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start_date", "12/07/2019"], ["cycle_length", 29], ["period_length", 5], ["user_id", 1], ["created_at", "2020-02-24 10:33:59.525927"], ["updated_at", "2020-02-24 10:33:59.525927"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCycle Create (0.5ms)[0m  [1m[32mINSERT INTO "cycles" ("start_date", "cycle_length", "period_length", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start_date", "01/05/2020"], ["cycle_length", 26], ["period_length", 4], ["user_id", 1], ["created_at", "2020-02-24 10:33:59.531038"], ["updated_at", "2020-02-24 10:33:59.531038"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCycle Create (0.3ms)[0m  [1m[32mINSERT INTO "cycles" ("start_date", "cycle_length", "period_length", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start_date", "01/31/2020"], ["cycle_length", 0], ["period_length", 4], ["user_id", 1], ["created_at", "2020-02-24 10:33:59.535532"], ["updated_at", "2020-02-24 10:33:59.535532"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCycle Load (0.2ms)[0m  [1m[34mSELECT "cycles".* FROM "cycles" WHERE "cycles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTracker Create (1.0ms)[0m  [1m[32mINSERT INTO "trackers" ("date", "intensity", "collection", "cycle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "01/31/2019"], ["intensity", 5], ["collection", "tampon"], ["cycle_id", 5], ["created_at", "2020-02-24 10:33:59.550591"], ["updated_at", "2020-02-24 10:33:59.550591"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCycle Load (0.2ms)[0m  [1m[34mSELECT "cycles".* FROM "cycles" WHERE "cycles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTracker Create (0.3ms)[0m  [1m[32mINSERT INTO "trackers" ("date", "intensity", "collection", "cycle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "02/01/2019"], ["intensity", 4], ["collection", "tampon"], ["cycle_id", 5], ["created_at", "2020-02-24 10:33:59.555587"], ["updated_at", "2020-02-24 10:33:59.555587"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCycle Load (0.2ms)[0m  [1m[34mSELECT "cycles".* FROM "cycles" WHERE "cycles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTracker Create (0.4ms)[0m  [1m[32mINSERT INTO "trackers" ("date", "intensity", "collection", "cycle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "02/02/2019"], ["intensity", 3], ["collection", "pad"], ["cycle_id", 5], ["created_at", "2020-02-24 10:33:59.559618"], ["updated_at", "2020-02-24 10:33:59.559618"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCycle Load (0.2ms)[0m  [1m[34mSELECT "cycles".* FROM "cycles" WHERE "cycles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTracker Create (0.5ms)[0m  [1m[32mINSERT INTO "trackers" ("date", "intensity", "collection", "cycle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "02/03/2019"], ["intensity", 2], ["collection", "pad"], ["cycle_id", 5], ["created_at", "2020-02-24 10:33:59.564143"], ["updated_at", "2020-02-24 10:33:59.564143"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCycle Load (0.2ms)[0m  [1m[34mSELECT "cycles".* FROM "cycles" WHERE "cycles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTracker Create (0.3ms)[0m  [1m[32mINSERT INTO "trackers" ("date", "intensity", "collection", "cycle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "02/04/2019"], ["intensity", 1], ["collection", "liner"], ["cycle_id", 5], ["created_at", "2020-02-24 10:33:59.568567"], ["updated_at", "2020-02-24 10:33:59.568567"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCycle Load (0.6ms)[0m  [1m[34mSELECT "cycles".* FROM "cycles" WHERE "cycles"."user_id" = $1 ORDER BY "cycles"."id" DESC LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mTracker Load (0.8ms)[0m  [1m[34mSELECT "trackers".* FROM "trackers" WHERE "trackers"."cycle_id" = $1 LIMIT $2[0m  [["cycle_id", 10], ["LIMIT", 11]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCycle Load (0.6ms)[0m  [1m[34mSELECT "cycles".* FROM "cycles" WHERE "cycles"."user_id" = $1 ORDER BY "cycles"."id" DESC LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCycle Load (0.6ms)[0m  [1m[34mSELECT "cycles".* FROM "cycles" WHERE "cycles"."user_id" = $1 ORDER BY "cycles"."id" ASC LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCycle Load (0.8ms)[0m  [1m[34mSELECT "cycles".* FROM "cycles" WHERE "cycles"."user_id" = $1 ORDER BY "cycles"."id" ASC LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mTracker Load (0.4ms)[0m  [1m[34mSELECT "trackers".* FROM "trackers" WHERE "trackers"."cycle_id" = $1 LIMIT $2[0m  [["cycle_id", 5], ["LIMIT", 11]]

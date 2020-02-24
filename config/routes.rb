@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   # get '/journal', to: 'users#journal'
   # get '/insights', to: 'users#insights'
   # get '/profile', to: 'users#profile'
+
 end
