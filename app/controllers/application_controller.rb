@@ -14,7 +14,7 @@ class ApplicationController < ActionController::API
     end
     
     def token
-        request.headers['Authorization']
+        request.headers['Authorization'] || request.headers['Authorisation']
     end
     
     def issue_token(data)
