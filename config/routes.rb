@@ -2,9 +2,8 @@ Rails.application.routes.draw do
   post '/signin', to: 'users#signin'
   post '/signup', to: 'users#signup'
   get '/validate', to: 'users#validate'
-  # get '/cycle', to: 'users#cycle'
+  get '/cycles', to: 'users#cycles'
+  get '/current_cycle', to: 'users#current_cycle'
   # get '/journal', to: 'users#journal'
-  # get '/insights', to: 'users#insights'
-  # get '/profile', to: 'users#profile'
 
 end

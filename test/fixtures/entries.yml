@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  entry_details: 
+  cycle_journal: one
+
+two:
+  date: MyString
+  entry_details: 
+  cycle_journal: two
