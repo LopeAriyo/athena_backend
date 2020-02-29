@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2020_02_25_104031) do
   end
 
   create_table "cycles", force: :cascade do |t|
+    t.boolean "active_cycle"
     t.string "start_date"
     t.integer "estimated_cycle_length"
     t.integer "cycle_length"

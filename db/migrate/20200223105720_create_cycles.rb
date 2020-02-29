@@ -1,6 +1,7 @@
 class CreateCycles < ActiveRecord::Migration[6.0]
   def change
     create_table :cycles do |t|
+      t.boolean :active_cycle
       t.string :start_date
       t.integer :estimated_cycle_length
       t.integer :cycle_length
